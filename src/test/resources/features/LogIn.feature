@@ -20,6 +20,7 @@ Feature: All users should be able to log in
       | salesmanager102 | UserUser123 | Dashboard       |
       | salesmanager103 | UserUser123 | Dashboard       |
 
+  @smoke
   Scenario Outline: "Invalid username or password." should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials
     When user enters his or her "<userName>" and "<passWord>"
     And clicks the LogIn button
@@ -59,12 +60,12 @@ Feature: All users should be able to log in
         When user clicks on the Forgot your password? link
         Then she or he lands on "Forgot Password" page
 
-
+      @smoke
       Scenario: User can see "Remember Me" link exists and is clickable on the login page,
         Then user should see and click on Remember me link
 
 
-      @wip
+      @smoke
       Scenario: Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.
           When user types his or her "user1" and "UserUser123"
           And user press enter key
