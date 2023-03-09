@@ -64,12 +64,13 @@ Feature: All users should be able to log in
         Then user should see and click on Remember me link
 
 
+      @wip
       Scenario: Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.
           When user types his or her "user1" and "UserUser123"
           And user press enter key
           Then user should land on "Quick Launchpad" dashboard.
 
-      @wip
+
       Scenario Outline: All users can see their own usernames in the profile menu, after successful login
           When user enters his or her "<userName>" and "<passWord>"
           And clicks the LogIn button
