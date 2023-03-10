@@ -46,7 +46,8 @@ public class LogInSteps {
 
     @Then("she or he gets {string} message from Username field")
     public void she_or_he_gets_message_from_username_field(String message) {
-       Assert.assertEquals(message,logInPage.logIn.getAttribute("validationMessage"));
+        String actualMessage =logInPage.logIn.getAttribute("validationMessage");
+       Assert.assertEquals(message,actualMessage);
     }
 
     @When("user enters his or her username like {string}")
@@ -73,6 +74,7 @@ public class LogInSteps {
     public void user_should_see_and_click_on_remember_me_link() {
        Assert.assertTrue(logInPage.rememberMe.isDisplayed());
         Assert.assertTrue(logInPage.rememberMe.isEnabled());
+        logInPage.rememberMe.click();
     }
     @When("user types his or her {string} and {string}")
     public void user_types_his_or_her_and(String username, String password) {

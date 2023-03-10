@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         dryRun = false,
-        tags = "@wip",
+        tags = "@XFLEET10-492",
         publish = true
 
 
