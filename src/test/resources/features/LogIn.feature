@@ -31,19 +31,19 @@ Feature: All users should be able to log in
     Then she or he gets "<expectedMessage>" message
 
     Examples:
-      | userName        | passWord    | expectedMessage                |
-      | user1           | useruser123 | Invalid user name or password. |
-      | aser1           | UserUser123 | Invalid user name or password. |
-      | USER1           | UserUser123 | Invalid user name or password. |
-      | STOREMANAGER51  | UserUser123 | Invalid user name or password. |
-      | SALESMANAGER102 | UserUser123 | Invalid user name or password. |
-      | 123456          | useruser123 | Invalid user name or password. |
-      | ??&%            | useruser123 | Invalid user name or password. |
-      | storemanager51  | useruser123 | Invalid user name or password. |
-      | salesmanager101 | useruser123 | Invalid user name or password. |
-      | user1           | 123456      | Invalid user name or password. |
-      | storemanager51  | 123%&?      | Invalid user name or password. |
-      | salesmanager102 | ?_%&+/      | Invalid user name or password. |
+      | userName        | passWord      | expectedMessage                |
+      | user1           | useruser123   | Invalid user name or password. |
+      | aser1           | UserUser123   | Invalid user name or password. |
+      | USER1           | UserUser123   | Invalid user name or password. |
+      | STOREMANAGER51  | UserUser123   | Invalid user name or password. |
+      | SALESMANAGER102 | UserUser123   | Invalid user name or password. |
+      | 123456          | useruser123   | Invalid user name or password. |
+      | ??&%            | useruser123   | Invalid user name or password. |
+      | storemanager51  | useruser123   | Invalid user name or password. |
+      | salesmanager101 | useruser123   | Invalid user name or password. |
+      | user1           | 123456789     | Invalid user name or password. |
+      | storemanager51  | 123%&?8568455 | Invalid user name or password. |
+      | salesmanager102 | ?_%&+/?!      | Invalid user name or password. |
 
 
   @XFLEET10-466

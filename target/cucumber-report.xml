@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="243.351" tests="36" skipped="0" failures="12" errors="0">
+<testcase classname="All users should be able to log in" name="All users can log in with valid credentials - Example #1.1" time="9.65">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "user1" and "UserUser123".......................passed
+And clicks the LogIn button.................................................passed
+Then she or he should lands on the "Quick Launchpad"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can log in with valid credentials - Example #1.2" time="6.642">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "user2" and "UserUser123".......................passed
+And clicks the LogIn button.................................................passed
+Then she or he should lands on the "Quick Launchpad"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can log in with valid credentials - Example #1.3" time="6.735">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "user3" and "UserUser123".......................passed
+And clicks the LogIn button.................................................passed
+Then she or he should lands on the "Quick Launchpad"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can log in with valid credentials - Example #1.4" time="7.828">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "storemanager51" and "UserUser123"..............passed
+And clicks the LogIn button.................................................passed
+Then she or he should lands on the "Dashboard"..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can log in with valid credentials - Example #1.5" time="6.625">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "storemanager52" and "UserUser123"..............passed
+And clicks the LogIn button.................................................passed
+Then she or he should lands on the "Dashboard"..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can log in with valid credentials - Example #1.6" time="6.955">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "storemanager53" and "UserUser123"..............passed
+And clicks the LogIn button.................................................passed
+Then she or he should lands on the "Dashboard"..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can log in with valid credentials - Example #1.7" time="7.679">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "salesmanager101" and "UserUser123".............passed
+And clicks the LogIn button.................................................passed
+Then she or he should lands on the "Dashboard"..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can log in with valid credentials - Example #1.8" time="8.073">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "salesmanager102" and "UserUser123".............passed
+And clicks the LogIn button.................................................passed
+Then she or he should lands on the "Dashboard"..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can log in with valid credentials - Example #1.9" time="6.148">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "salesmanager103" and "UserUser123".............passed
+And clicks the LogIn button.................................................passed
+Then she or he should lands on the "Dashboard"..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Invalid username or password.&quot; should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials - Example #1.1" time="4.914">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "user1" and "useruser123".......................passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Invalid user name or password." message................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Invalid username or password.&quot; should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials - Example #1.2" time="4.375">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "aser1" and "UserUser123".......................passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Invalid user name or password." message................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Invalid username or password.&quot; should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials - Example #1.3" time="7.511">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[Invalid user name or password].&gt; but was:&lt;[×
+The application is not configured properly (message consumers are not available). Please contact the system administrator].&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[Invalid user name or password].> but was:<[×
+The application is not configured properly (message consumers are not available). Please contact the system administrator].>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cydeo.step_definitions.LogInSteps.she_or_he_gets_message(LogInSteps.java:44)
+	at ✽.she or he gets "Invalid user name or password." message(file:///C:/Users/Aciko/IdeaProjects/XFLEETSOLUTIONS/src/test/resources/features/LogIn.feature:31)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "USER1" and "UserUser123".......................passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Invalid user name or password." message................failed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Invalid username or password.&quot; should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials - Example #1.4" time="7.735">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[Invalid user name or password].&gt; but was:&lt;[×
+The application is not configured properly (message consumers are not available). Please contact the system administrator].&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[Invalid user name or password].> but was:<[×
+The application is not configured properly (message consumers are not available). Please contact the system administrator].>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cydeo.step_definitions.LogInSteps.she_or_he_gets_message(LogInSteps.java:44)
+	at ✽.she or he gets "Invalid user name or password." message(file:///C:/Users/Aciko/IdeaProjects/XFLEETSOLUTIONS/src/test/resources/features/LogIn.feature:31)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "STOREMANAGER51" and "UserUser123"..............passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Invalid user name or password." message................failed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Invalid username or password.&quot; should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials - Example #1.5" time="8.763">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[Invalid user name or password].&gt; but was:&lt;[×
+The application is not configured properly (message consumers are not available). Please contact the system administrator].&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[Invalid user name or password].> but was:<[×
+The application is not configured properly (message consumers are not available). Please contact the system administrator].>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cydeo.step_definitions.LogInSteps.she_or_he_gets_message(LogInSteps.java:44)
+	at ✽.she or he gets "Invalid user name or password." message(file:///C:/Users/Aciko/IdeaProjects/XFLEETSOLUTIONS/src/test/resources/features/LogIn.feature:31)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "SALESMANAGER102" and "UserUser123".............passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Invalid user name or password." message................failed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Invalid username or password.&quot; should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials - Example #1.6" time="4.3">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "123456" and "useruser123"......................passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Invalid user name or password." message................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Invalid username or password.&quot; should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials - Example #1.7" time="6.034">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "??&%" and "useruser123"........................passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Invalid user name or password." message................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Invalid username or password.&quot; should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials - Example #1.8" time="4.036">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "storemanager51" and "useruser123"..............passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Invalid user name or password." message................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Invalid username or password.&quot; should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials - Example #1.9" time="5.728">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "salesmanager101" and "useruser123".............passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Invalid user name or password." message................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Invalid username or password.&quot; should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials - Example #1.10" time="4.607">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "user1" and "123456789".........................passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Invalid user name or password." message................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Invalid username or password.&quot; should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials - Example #1.11" time="5.331">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "storemanager51" and "123%&?8568455"............passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Invalid user name or password." message................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Invalid username or password.&quot; should be displayed for invalid (valid username-invalid password and invalid username-valid password) credentials - Example #1.12" time="4.579">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "salesmanager102" and "?_%&+/?!"................passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Invalid user name or password." message................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Please fill out this field&quot; message should be displayed from username field if the username or both username and password field are empty - Example #1.1" time="5.302">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "" and "UserUser123"............................passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Please fill out this field." message from Username field.passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Please fill out this field&quot; message should be displayed from username field if the username or both username and password field are empty - Example #1.2" time="3.561">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "" and "".......................................passed
+And clicks the LogIn button.................................................passed
+Then she or he gets "Please fill out this field." message from Username field.passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="&quot;Please fill out this field&quot; message should be displayed from password field when this field is empty" time="4.426">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her username like "user1"...........................passed
+And clicks the LogIn button.................................................passed
+Then she or he get "Please fill out this field." message from Password field.passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="User land on the ‘Forgot Password’ page after clicking on the &quot;Forgot your password?&quot; link" time="4.341">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user clicks on the Forgot your password? link..........................passed
+Then she or he lands on "Forgot Password" page..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="User can see &quot;Remember Me&quot; link exists and is clickable on the login page," time="11.181">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+Then user should see and click on Remember me link..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="Verify if the ‘Enter’ key of the keyboard is working correctly on the login page." time="8.246">
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user types his or her "user1" and "UserUser123"........................passed
+And user press enter key....................................................passed
+Then user should land on "Quick Launchpad" dashboard........................passed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can see their own usernames in the profile menu, after successful login - Example #1.1" time="6.556">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[user1]&gt; but was:&lt;[John Doe]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[user1]> but was:<[John Doe]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cydeo.step_definitions.LogInSteps.user_should_see_his_or_her_in_the_profile_menu(LogInSteps.java:101)
+	at ✽.user should see his or her "user1" in the profile menu(file:///C:/Users/Aciko/IdeaProjects/XFLEETSOLUTIONS/src/test/resources/features/LogIn.feature:89)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "user1" and "UserUser123".......................passed
+And clicks the LogIn button.................................................passed
+Then user should see his or her "user1" in the profile menu.................failed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can see their own usernames in the profile menu, after successful login - Example #1.2" time="7.169">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[user2]&gt; but was:&lt;[John Doe]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[user2]> but was:<[John Doe]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cydeo.step_definitions.LogInSteps.user_should_see_his_or_her_in_the_profile_menu(LogInSteps.java:101)
+	at ✽.user should see his or her "user2" in the profile menu(file:///C:/Users/Aciko/IdeaProjects/XFLEETSOLUTIONS/src/test/resources/features/LogIn.feature:89)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "user2" and "UserUser123".......................passed
+And clicks the LogIn button.................................................passed
+Then user should see his or her "user2" in the profile menu.................failed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can see their own usernames in the profile menu, after successful login - Example #1.3" time="8.024">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[user3]&gt; but was:&lt;[John Doe]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[user3]> but was:<[John Doe]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cydeo.step_definitions.LogInSteps.user_should_see_his_or_her_in_the_profile_menu(LogInSteps.java:101)
+	at ✽.user should see his or her "user3" in the profile menu(file:///C:/Users/Aciko/IdeaProjects/XFLEETSOLUTIONS/src/test/resources/features/LogIn.feature:89)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "user3" and "UserUser123".......................passed
+And clicks the LogIn button.................................................passed
+Then user should see his or her "user3" in the profile menu.................failed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can see their own usernames in the profile menu, after successful login - Example #1.4" time="8.171">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[storemanager51]&gt; but was:&lt;[John Doe]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[storemanager51]> but was:<[John Doe]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cydeo.step_definitions.LogInSteps.user_should_see_his_or_her_in_the_profile_menu(LogInSteps.java:101)
+	at ✽.user should see his or her "storemanager51" in the profile menu(file:///C:/Users/Aciko/IdeaProjects/XFLEETSOLUTIONS/src/test/resources/features/LogIn.feature:89)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "storemanager51" and "UserUser123"..............passed
+And clicks the LogIn button.................................................passed
+Then user should see his or her "storemanager51" in the profile menu........failed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can see their own usernames in the profile menu, after successful login - Example #1.5" time="7.972">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[storemanager52]&gt; but was:&lt;[John Doe]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[storemanager52]> but was:<[John Doe]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cydeo.step_definitions.LogInSteps.user_should_see_his_or_her_in_the_profile_menu(LogInSteps.java:101)
+	at ✽.user should see his or her "storemanager52" in the profile menu(file:///C:/Users/Aciko/IdeaProjects/XFLEETSOLUTIONS/src/test/resources/features/LogIn.feature:89)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "storemanager52" and "UserUser123"..............passed
+And clicks the LogIn button.................................................passed
+Then user should see his or her "storemanager52" in the profile menu........failed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can see their own usernames in the profile menu, after successful login - Example #1.6" time="6.871">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[storemanager53]&gt; but was:&lt;[John Doe]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[storemanager53]> but was:<[John Doe]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cydeo.step_definitions.LogInSteps.user_should_see_his_or_her_in_the_profile_menu(LogInSteps.java:101)
+	at ✽.user should see his or her "storemanager53" in the profile menu(file:///C:/Users/Aciko/IdeaProjects/XFLEETSOLUTIONS/src/test/resources/features/LogIn.feature:89)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "storemanager53" and "UserUser123"..............passed
+And clicks the LogIn button.................................................passed
+Then user should see his or her "storemanager53" in the profile menu........failed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can see their own usernames in the profile menu, after successful login - Example #1.7" time="7.317">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[salesmanager101]&gt; but was:&lt;[John Doe]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[salesmanager101]> but was:<[John Doe]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cydeo.step_definitions.LogInSteps.user_should_see_his_or_her_in_the_profile_menu(LogInSteps.java:101)
+	at ✽.user should see his or her "salesmanager101" in the profile menu(file:///C:/Users/Aciko/IdeaProjects/XFLEETSOLUTIONS/src/test/resources/features/LogIn.feature:89)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "salesmanager101" and "UserUser123".............passed
+And clicks the LogIn button.................................................passed
+Then user should see his or her "salesmanager101" in the profile menu.......failed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can see their own usernames in the profile menu, after successful login - Example #1.8" time="8.195">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[salesmanager102]&gt; but was:&lt;[John Doe]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[salesmanager102]> but was:<[John Doe]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cydeo.step_definitions.LogInSteps.user_should_see_his_or_her_in_the_profile_menu(LogInSteps.java:101)
+	at ✽.user should see his or her "salesmanager102" in the profile menu(file:///C:/Users/Aciko/IdeaProjects/XFLEETSOLUTIONS/src/test/resources/features/LogIn.feature:89)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "salesmanager102" and "UserUser123".............passed
+And clicks the LogIn button.................................................passed
+Then user should see his or her "salesmanager102" in the profile menu.......failed
+]]></system-out>
+</testcase>
+<testcase classname="All users should be able to log in" name="All users can see their own usernames in the profile menu, after successful login - Example #1.9" time="11.106">
+<failure type="org.junit.ComparisonFailure" message="expected:&lt;[salesmanager103]&gt; but was:&lt;[John Doe]&gt;">
+<![CDATA[org.junit.ComparisonFailure: expected:<[salesmanager103]> but was:<[John Doe]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cydeo.step_definitions.LogInSteps.user_should_see_his_or_her_in_the_profile_menu(LogInSteps.java:101)
+	at ✽.user should see his or her "salesmanager103" in the profile menu(file:///C:/Users/Aciko/IdeaProjects/XFLEETSOLUTIONS/src/test/resources/features/LogIn.feature:89)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on the log in page........................................passed
+When user enters his or her "salesmanager103" and "UserUser123".............passed
+And clicks the LogIn button.................................................passed
+Then user should see his or her "salesmanager103" in the profile menu.......failed
+]]></system-out>
+</testcase>
+</testsuite>

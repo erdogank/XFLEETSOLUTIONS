@@ -71,10 +71,17 @@ public class LogInSteps {
     }
 
     @Then("user should see and click on Remember me link")
-    public void user_should_see_and_click_on_remember_me_link() {
+    public void user_should_see_and_click_on_remember_me_link() throws InterruptedException {
        Assert.assertTrue(logInPage.rememberMe.isDisplayed());
         Assert.assertTrue(logInPage.rememberMe.isEnabled());
+        logInPage.logIn.sendKeys("user");
+        logInPage.passWord.sendKeys("UserUser123");
         logInPage.rememberMe.click();
+        logInPage.logInButton.click();
+        Driver.closeDriver();
+        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
+        Thread.sleep(3000);
+        System.out.println(Driver.getDriver().getTitle());
     }
     @When("user types his or her {string} and {string}")
     public void user_types_his_or_her_and(String username, String password) {
