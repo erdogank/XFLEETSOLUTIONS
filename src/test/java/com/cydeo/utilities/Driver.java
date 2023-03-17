@@ -46,6 +46,13 @@ public class Driver {
                     driver.manage().window().maximize();
                     //   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
+                case "chromelogin":
+                    WebDriverManager.chromedriver().setup();
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("user-data-dir=c:/temp/");
+                    driver= new ChromeDriver(options);
+                    break;
+
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
