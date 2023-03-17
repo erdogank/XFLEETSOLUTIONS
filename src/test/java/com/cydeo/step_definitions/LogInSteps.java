@@ -70,6 +70,14 @@ public class LogInSteps {
         Assert.assertEquals(string,Driver.getDriver().getTitle());
     }
 
+    @Then("while entering password, user should not see his password instead he should see masked password")
+    public void while_entering_password_user_should_not_see_his_password_instead_he_should_see_masked_password() {
+
+        Assert.assertTrue(logInPage.passWord.getAttribute("type").equals("password"));
+
+    }
+
+
     @Then("user should see and click on Remember me link")
     public void user_should_see_and_click_on_remember_me_link() throws InterruptedException {
        Assert.assertTrue(logInPage.rememberMe.isDisplayed());

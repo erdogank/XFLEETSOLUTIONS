@@ -22,6 +22,9 @@ Feature: All users should be able to log in
       | salesmanager101 | UserUser123 | Dashboard       |
       | salesmanager102 | UserUser123 | Dashboard       |
       | salesmanager103 | UserUser123 | Dashboard       |
+      | USER1           | UserUser123 | Quick Launchpad |
+      | STOREMANAGER51  | UserUser123 | Dashboard       |
+      | SALESMANAGER102 | UserUser123 | Dashboard       |
 
 
   @XFLEET10-465
@@ -34,9 +37,9 @@ Feature: All users should be able to log in
       | userName        | passWord      | expectedMessage                |
       | user1           | useruser123   | Invalid user name or password. |
       | aser1           | UserUser123   | Invalid user name or password. |
-      | USER1           | UserUser123   | Invalid user name or password. |
-      | STOREMANAGER51  | UserUser123   | Invalid user name or password. |
-      | SALESMANAGER102 | UserUser123   | Invalid user name or password. |
+      | USER1           | useruser123   | Invalid user name or password. |
+      | STOREMANAGER51  | USERUSER123   | Invalid user name or password. |
+      | SALESMANAGER102 | Useruser123   | Invalid user name or password. |
       | 123456          | useruser123   | Invalid user name or password. |
       | ??&%            | useruser123   | Invalid user name or password. |
       | storemanager51  | useruser123   | Invalid user name or password. |
@@ -73,6 +76,9 @@ Feature: All users should be able to log in
   @XFLEET10-469
   Scenario: User can see "Remember Me" link exists and is clickable on the login page,
     Then user should see and click on Remember me link
+  @XFLEET10-470
+    Scenario: User should see the password in bullet signs by default (like ****)
+      Then while entering password, user should not see his password instead he should see masked password
 
 
   @XFLEET10-472

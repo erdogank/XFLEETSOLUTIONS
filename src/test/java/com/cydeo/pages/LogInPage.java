@@ -29,4 +29,7 @@ public class LogInPage {
     @FindBy(css = ".custom-checkbox__text")
     public WebElement rememberMe;
 
+    @FindBy(css = "#login-form > fieldset > div.oro-remember-me > label > span.custom-checkbox__text")
+    public WebElement rememberToClick;
+
 }

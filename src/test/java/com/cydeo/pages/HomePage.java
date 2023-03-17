@@ -12,8 +12,14 @@ public class HomePage {
 
     }
 
-    @FindBy(xpath = "//div[@class='pull-left pull-left-extra']/div")
+    @FindBy(xpath = "//div[@class='pull-left']")
     public WebElement dashBoard;
-    @FindBy(xpath = "//li[@id='user-menu']/a")
+    @FindBy(css = "#user-menu > a")
     public WebElement profileMenu;
+
+    @FindBy(css = "#user-menu > ul > li.last > a")
+    public WebElement profileMenuLink;
+
+    @FindBy(linkText = "Logout")
+    public WebElement logOut;
 }
