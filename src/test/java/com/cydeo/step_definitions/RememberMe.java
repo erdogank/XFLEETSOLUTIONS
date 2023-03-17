@@ -5,6 +5,7 @@ import com.cydeo.pages.LogInPage;
 import com.cydeo.utilities.WebDriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -40,6 +41,7 @@ public class RememberMe {
         WebDriver driver =  WebDriverFactory.getDriver("chrome");
 
         driver.get("http://qa.xfleetsolutions.com/");
+        Assert.assertTrue(driver.getTitle().equals("Login"));
         driver.findElement(By.cssSelector("#user-menu > a")).click();
         driver.findElement(By.linkText("Logout")).click();
         driver.quit();
