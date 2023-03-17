@@ -76,7 +76,7 @@ public class RememberMe {
         Driver.getDriver().findElement(By.cssSelector("#user-menu > a")).click();
         Driver.getDriver().findElement(By.linkText("Logout")).click();
         Assert.assertEquals("Login",Driver.getDriver().getTitle());
-        Driver.closeDriver();
+        //Driver.closeDriver();
 
     }
 
